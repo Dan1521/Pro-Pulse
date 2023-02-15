@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/swiper.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Главная</title>
+</head>
+<body>
+  <div class="wrapper overflow">
+    <header class="header header--position">
+    <div class="container header__container">
+      <a class="logo header__logo" href="index.html" aria-label="Логотип">
+        <img src="assets/images/logo.svg" alt="Логотип">
+      </a>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item menu__item--sub-menu" >
+            <a class="menu__link" href="#" data-sub-menu-trigger>
+              <span>О компании</span>
+              <svg class='menu__link-arrow'>
+                <use xlink:href='assets/images/sprite/sprite.svg#chevron-down'></use>
+              </svg>
+            </a>
+            <div class="sub-menu" data-sub-menu>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">О нас</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Реквезиты</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Закупки</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Партнеры</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="licenses.html">Лицензии</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item menu__item--sub-menu" >
+            <a class="menu__link" href="#" data-sub-menu-trigger>
+              <span>Услуги</span>
+              <svg class='menu__link-arrow'>
+                <use xlink:href='assets/images/sprite/sprite.svg#chevron-down'></use>
+              </svg>
+            </a>
+            <div class="sub-menu" data-sub-menu>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Вакансии</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Вакансии</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Вакансии</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Вакансии</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item menu__item--sub-menu" >
+            <a class="menu__link" href="#" data-sub-menu-trigger>
+              <span>Раскрытые Информации</span>
+              <svg class='menu__link-arrow'>
+                <use xlink:href='assets/images/sprite/sprite.svg#chevron-down'></use>
+              </svg>
+            </a>
+           <div class="sub-menu" data-sub-menu>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Вакансии</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Вакансии</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Вакансии</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Вакансии</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item menu__item--sub-menu">
+            <a class="menu__link" href="#" data-sub-menu-trigger>
+              <span>Абонентам</span>
+              <svg class='menu__link-arrow'>
+                <use xlink:href='assets/images/sprite/sprite.svg#chevron-down'></use>
+              </svg>
+            </a>
+           <div class="sub-menu" data-sub-menu>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Вакансии</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Вакансии</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Вакансии</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Вакансии</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./our-object.html">
+              <span>Наши Объекты</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="news.html">
+              <span>Новости</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <span>Контакты</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contact">
+        <a class="header__contact-tel" href="tel:+71234567890">+7(123) 456-78-90</a>
+        <a class="header__contact-email" href="mailot:yourmail@company.com">yourmail@company.com</a>
+      </div>
+      <button class="btn-reset burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      </div>
+  </header>
+      <main class="main">
+        <div class="photo news-card-photo photo--overle" > 
+            <div class="photo__breadcrumbs breadcrumbs">
+                <div class="container">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                      <a class="breadcrumbs__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="news.html">Новости</a>
+                      </li>
+                    <li class="breadcrumbs__item">
+                      <span class="breadcrumbs__link">Проектирование, монтаж и сервисное обслуживание систем отопления и теплоснабжения</span>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <img class="photo__img" src="./assets/images/news/08.webp" alt="">
+        </div>
+        <div class="news-card">
+            <div class="news-card__left">
+                <div class="news-card__content">
+                    <a class="news-card__back" href="news.html">
+                        <svg>
+                            <use xlink:href='assets/images/sprite/sprite.svg#arrow-left'></use>
+                        </svg>
+                    </a>
+                    <div class="news-card__col">
+                        <div class="news-card__block block-news">
+                            <h1 class="title-2__text title-2--mb">Проектирование, монтаж и сервисное обслуживание систем отопления и теплоснабжения</h1>
+                            <p class="block-news__text">
+                                Наша команда профессионалов эффективно решит задачи по проектированию инженерных систем отопленияи теплоснабжения любого вида сложности. Мы занимаемся монтажом систем отопления, а также сервисным обслуживанием, ремонтом или реконструкцией этих систем. Принцип нашей работы — системы отопление «под ключ»! Компания Термал предлагает только качественное отопительное и котельное оборудование лучших фирм в этом сегменте. Таблица стоимость тепла из разных источников Сравнительный расчёт стоимости отопленияпри использовании разных источников.
+                            </p>
+                        </div>
+                        <div class="news-card__block block-news">
+                            <div class="block-news__table">
+                                <div class="block-news__row">
+                                    <div class="block-news__th"></div>
+                                    <div class="block-news__tb">Стоимость ресурса</div>
+                                    <div class="block-news__tb">Цена тепловой энергии</div>
+                                </div>
+                                <div class="block-news__row">
+                                    <div class="block-news__th">Электроэнергия</div>
+                                    <div class="block-news__tb">
+                                        <span>1,68 грн за 1кВт*час</span>
+                                        <span class="block-news__tb-label">Стоимость ресурса</span>
+                                    </div>
+                                    <div class="block-news__tb">
+                                        <span>1,68</span>
+                                        <span class="block-news__tb-label">Цена тепловой энергии</span>
+                                    </div>
+                                </div>
+                                <div class="block-news__row">
+                                    <div class="block-news__th">Природный газ</div>
+                                    <div class="block-news__tb">
+                                        <span>11340 грн за 1000 нм3</span>
+                                        <span class="block-news__tb-label">Стоимость ресурса</span>
+                                    </div>
+                                    <div class="block-news__tb">
+                                        <span>1,40</span>
+                                        <span class="block-news__tb-label">Цена тепловой энергии</span>
+                                    </div>
+                                </div>
+                                <div class="block-news__row">
+                                    <div class="block-news__th">Центральное теплоснабжение</div>
+                                    <div class="block-news__tb">
+                                        <span>1108 грн за 1 Гкал</span>
+                                        <span class="block-news__tb-label">Стоимость ресурса</span>
+                                    </div>
+                                    <div class="block-news__tb">
+                                        <span>0,95</span>
+                                        <span class="block-news__tb-label">Цена тепловой энергии</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-card__block block-news">
+                            <h2 class="title-3 title-3--mb">Тепловые насосы для отопления – источник самого дешевого тепла</h2>
+                            <div class="block-news__quote">
+                                Окупаемость замены существующей системы на тепловой насос может составлять от 1 до 4 лет.</div>
+                            <p class="block-news__text">
+                                Для уменьшения затрат на производство тепла предлагается использовать воздушные тепловые насосыдля отопления типа воздух-воздух.
+                            </p>
+                            <p class="block-news__text">
+                                Тепловые насосы типа воздух-воздух гарантировано работают до наружных температур — 25С и ниже. Среднегодичный коэффициент преобразования электрической энергии в тепловую выше 5. При — 20С этот коэффициент преобразования равен 3.
+                            </p>
+                            <p class="block-news__text">
+                                Подбор оборудования на отопление происходит именно при коэффициенте 3. При стоимости электроэнергии 1,68 грн за 1 кВт*час в годичном разрезе стоимость 1кВт*час тепла составляет 0,34 грн. Для сравнения при стоимости природного газа 11340 грн за 1000 м3, стоимость 1 кВт*час тепла с газовой котельне составляет 1,40 грн. Т.е. установка систем отопления с тепловыми насосами почти в 4 раза экономичней.
+                            </p>
+                            <div class="block-news__slider-wrap">
+                                <div class="block-news__slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/news/10.webp" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/news/10.webp" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/news/10.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <button class="btn-reset slider-arrow-big slider-arrow-big-prev block-news__slider-prev">
+                                        <svg>
+                                            <use xlink:href='assets/images/sprite/sprite.svg#chevron-left'></use>
+                                        </svg>
+                                    </button>
+                                    <button class="btn-reset slider-arrow-big slider-arrow-big-next block-news__slider-next">
+                                    <svg>
+                                        <use xlink:href='assets/images/sprite/sprite.svg#chevron-left'></use>
+                                    </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-card__block block-news">
+                            <h2 class="title-3 title-3--mb">Тепловые насосы для отопления – источник самого дешевого тепла</h2>
+                            <ul class="block-news__list block-news__list--number">
+                                <li class="block-news__item">Нет потребности в строительстве котельной, газопровода, теплопункта и разводки теплоносителя внутри помещения.</li>
+                                <li class="block-news__item">Не увеличивается электрическая установленная мощность. Достаточно электрической мощности запроектированной на систему кондиционирования.</li>
+                                <li class="block-news__item">Низкие эксплуатационные затраты. В среднем в 3–4 раза отопление дешевле чем при отоплении котельной при существующих ценах на энергоносители.</li>
+                                <li class="block-news__item">Нет увеличения капитальных затрат по сравнению с классической системой. Если разница и возникает, то она себя быстро окупает.</li>
+                                <li class="block-news__item">Из за отсутствия воды, исчезает вероятность обмораживания калориферов.
+                                </li>
+                                <li class="block-news__item">Предусмотрена система дублирования тепловой мощности.
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="news-card__block block-news">
+                            <h2 class="title-3 title-3--mb">Помещения, применение в которых лучистых панелей имеет максимальный эффект:
+                            </h2>
+                            <ul class="block-news__list block-news__list--disc">
+                                <li class="block-news__item">склады, супермаркеты</li>    
+                                <li class="block-news__item">спорткомплексы, крытые стадионы</li>    
+                                <li class="block-news__item">выставочные залы, церкви</li>    
+                                <li class="block-news__item">все производственные предприятия, цеха</li>    
+                                <li class="block-news__item">другие помещения большой высоты (4 метра и более)</li>    
+                            </ul>
+                        </div>
+                        <div class="news-card__block block-news">
+                            <h2 class="title-3 title-3--mb">Воздушные теплогенераторы, воздухонагреватели
+                            </h2>
+                            <div class="block-news__subtitle">Топливо</div>
+                            <ul class="block-news__list block-news__list--disc">
+                                <li class="block-news__item">природный газ</li>      
+                                <li class="block-news__item">сжиженный газ</li>      
+                                <li class="block-news__item">дизельное топливо</li>      
+                                <li class="block-news__item">отработанное моторное масло</li>      
+                                <li class="block-news__item">твёрдое топливе (пелеты или щипа)</li>      
+                            </ul>
+                        </div>
+                        <div class="news-card__block block-news">
+                            <div class="block-news__rate rate">
+                                <div class="rate__icon">
+                                    <svg>
+                                        <use xlink:href='assets/images/sprite/sprite.svg#file'></use>
+                                    </svg>
+                                </div>
+                                <div class="rate__text">Название файла.pdf</div>
+                                <a class="rate__download" href="">
+                                    <svg>
+                                        <use xlink:href='assets/images/sprite/sprite.svg#download'></use>
+                                    </svg>
+                                    <span>СКАЧАТЬ</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-card__right">
+                <a class="news-card__back" href="news.html">
+                    <svg>
+                        <use xlink:href="assets/images/sprite/sprite.svg#arrow-left"></use>
+                    </svg>
+                </a>
+                <div class="news-card__date">02.04.2021</div>
+            </div>
+        </div>
+      </main>
+    <footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <a class="footer__logo">
+        <img class="footer__logo-img" src="../assets/images/logo.svg" alt="">
+        <span class="footer__logo-text">ООО "Пром Импульс" 2021</span>
+      </a>
+      <div class="footer__items">
+        <div class="footer__item item-footer" data-sub-menu-trigger>
+          <div class="item-footer__title">
+            <span>Разделы сайта</span>
+            <svg class='item-footer__title-arrow'>
+              <use xlink:href='assets/images/sprite/sprite.svg#chevron-down'></use>
+            </svg>
+          </div>
+          <ul class="item-footer__list" data-sub-menu>
+            <li class="item-footer__item item-footer__item--mb">
+              <a class="item-footer__link" href="">О компании</a>
+            </li>
+            <li class="item-footer__item item-footer__item--mb">
+              <a class="item-footer__link" href="">Услуги</a>
+            </li>
+            <li class="item-footer__item item-footer__item--mb">
+              <a class="item-footer__link" href="">Раскрытие информации</a>
+            </li>
+            <li class="item-footer__item item-footer__item--mb">
+              <a class="item-footer__link" href="">Абонентам</a>
+            </li>
+            <li class="item-footer__item item-footer__item--mb">
+              <a class="item-footer__link" href="">Наши объекта</a>
+            </li>
+            <li class="item-footer__item item-footer__item--mb">
+              <a class="item-footer__link" href="">Новости</a>
+            </li>
+            <li class="item-footer__item item-footer__item--mb">
+              <a class="item-footer__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item item-footer" data-sub-menu-trigger>
+          <div class="item-footer__title">
+            <span>Реквизиты</span>
+            <svg class='item-footer__title-arrow'>
+              <use xlink:href='assets/images/sprite/sprite.svg#chevron-down'></use>
+            </svg>
+          </div>
+          <ul class="item-footer__list" data-sub-menu>
+            <li class="item-footer__item">ООО "Пром Импульс"</li>
+            <li class="item-footer__item">ОГРН: 1053600591197</li>
+            <li class="item-footer__item">ИНН: 3664069397</li>
+            <li class="item-footer__item">КПП: xxxxxxxxx</li>
+            <li class="item-footer__item">ПФР: xxxxxxxxxxxx</li>
+            <li class="item-footer__item">ОКПО: xxxxxxxx</li>
+            <li class="item-footer__item">ФСС: xxxxxxxxxxxxxxx</li>
+            <li class="item-footer__item">ОКАТО: xxxxxxxxxxx</li>
+            <li class="item-footer__item">ОКТМО: xxxxxxxx</li>
+            <li class="item-footer__item">ОКОГУ: xxxxxxx</li>
+            <li class="item-footer__item">ОКФС: xx</li>
+            <li class="item-footer__item">ОКОПФ: xxxxx</li>      
+          </ul>
+        </div>
+        <div class="footer__item item-footer" data-sub-menu-trigger>
+          <div class="item-footer__title item-footer__title--hidden">
+            <span>Конаткты</span>
+            <svg class='item-footer__title-arrow'>
+              <use xlink:href='assets/images/sprite/sprite.svg#chevron-down'></use>
+            </svg>
+          </div>
+          <ul class="item-footer__list" data-sub-menu>
+            <li class="item-footer__item item-footer__item--mbs">
+              <div class="item-footer__item-title">Тел./факс:</div>
+              <a class="item-footer__item-content item-footer__item-content--tel" href="tel:+78126037377">+7 (812) 603-73-77</a>
+            </li>  
+            <li class="item-footer__item item-footer__item--mbs">
+              <div class="item-footer__item-title">Адрес:</div>
+              <div class="item-footer__item-content">196084, г. Санкт-Петербург,<br>ул. Рощинская, д. 5, лит. И</div>
+            </li>  
+            <li class="item-footer__item item-footer__item--mbs">
+              <div class="item-footer__item-title">Email:</div>
+              <a class="item-footer__item-content" href="tel:+78126037377">office@promimpuls.ru</a>
+            </li>  
+            <li class="item-footer__item item-footer__item--mbs">
+              <div class="item-footer__item-title">График работы:</div>
+              <div class="item-footer__item-content">Понедельник-Пятница <br>08:00 - 19:00</div>
+            </li>  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="footer__line"></span>
+  <div class="footer__bottom">
+    <div class="container">
+      <a class="footer__link" href="#">Карта сайта</a>
+      <div class="footer__bottom-inner">
+        <a class="footer__link" href="#">Обработка персональных данных</a>
+        <a class="footer__link" href="#">Политика конфиденциальности</a>
+        <a class="footer__link" href="#">Разработка: Design Studio</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+<script src="assets/js/swiper.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
