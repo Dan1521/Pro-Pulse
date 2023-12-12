@@ -158,43 +158,106 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	
 
-	const mapObject = document.querySelectorAll('[data-marker]'),
-		popup = document.querySelectorAll('.pop-up-object'),
-		animItems = document.querySelectorAll('.anim');
-	if(mapObject){
-		mapObject.forEach(object=>{
-			object.addEventListener('mouseover', (event)=>{
-				let self = event.currentTarget,
-					parent = self.parentNode,
-					parentId = parent.id;
 
-					console.log(parent)
 	
-				parent.classList.add('_active');
+
+
+		const animItems = document.querySelectorAll('.anim');
+	// if(mapObject){
+	// 	mapObject.forEach(object=>{
+	// 		object.addEventListener('mouseover', (event)=>{
+	// 			let self = event.currentTarget,
+	// 				parent = self.parentNode,
+	// 				parentId = parent.id;
 	
-				popup.forEach(modal =>{
-					if(modal.dataset.id == parentId){
-						let markerTop = self.getBoundingClientRect().top,
-							markerLeft = self.getBoundingClientRect().left;
+	// 			parent.classList.add('_active');
 	
-						modal.classList.add('_active');
-						modal.style.left = (markerLeft - modal.offsetWidth / 2) + 'px';
-						modal.style.top = markerTop + pageYOffset  + 100 + 'px';		
-					}
-				})
-			})
+	// 			popup.forEach(modal =>{
+	// 				if(modal.dataset.id == parentId){
+	// 					let markerTop = self.getBoundingClientRect().top,
+	// 						markerLeft = self.getBoundingClientRect().left;
 	
-			object.addEventListener('mouseout', (event)=>{
-				popup.forEach(modal =>{
-					let parent = event.currentTarget.parentNode;
+	// 					modal.classList.add('_active');
+	// 					modal.style.left = (markerLeft - modal.offsetWidth / 2) + 'px';
+	// 					modal.style.top = markerTop + pageYOffset  + 100 + 'px';		
+	// 				}
+	// 			})
+	// 		})
 	
-					modal.classList.remove('_active');				
-					parent.classList.remove('_active');
-				})
-			})
+	// 		object.addEventListener('mouseout', (event)=>{
+	// 			popup.forEach(modal =>{
+	// 				let parent = event.currentTarget.parentNode;
 	
-		})
-	}
+	// 				modal.classList.remove('_active');				
+	// 				parent.classList.remove('_active');
+	// 			})
+	// 		})
+	
+	// 	})
+	// }
+
+
+	// Obeject map mouves
+	const popUps = document.querySelectorAll('.objects__pop-up');
+	document.querySelector('.objects__map').addEventListener('mouseover', (event)=>{
+		const self = event.target;
+
+		document.querySelectorAll('.map__object').forEach(element => {
+			let parent = self.parentNode,
+				parentId = parent.id;
+
+			
+		if(parent == element){
+			for (let i = 0; i < popUps.length; i++) {
+				const popUp = popUps[i];
+
+				if(parentId == popUp.dataset.id){
+					parent.classList.add('_active')
+					console.log(parent);
+
+					let markerTop = parent.getBoundingClientRect().top,
+						markerLeft = parent.getBoundingClientRect().left;
+
+						popUp.style.left = (markerLeft - popUp.offsetWidth / 2) + 'px';
+						popUp.style.top = markerTop + pageYOffset  + 100 + 'px';
+						popUp.classList.add('_active');
+
+						popUp.addEventListener('mouseover', e=>{
+							let self = e.currentTarget;
+							if(self){
+								parent.classList.add('_active')
+								self.classList.add('_active');
+							}
+						
+						})
+				}
+
+				
+
+			}
+
+		}
+			
+		});
+		
+	})
+
+	document.querySelector('.objects__map').addEventListener('mouseout', (event)=>{
+		let self = event.target,
+			parent = self.parentNode;
+			parent.classList.remove('_active')
+		for (let i = 0; i < popUps.length; i++) {
+			const popUp = popUps[i];
+				
+				popUp.classList.remove('_active');
+	
+
+		}
+	})
+
+	
+
+
 	
 
 	function animScroll(){
